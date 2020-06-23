@@ -1,0 +1,80 @@
+:root {
+  --success: rgb(48, 209, 88);
+  --fail: rgb(255, 69, 58);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
+form {
+  border: 2px solid black;
+  padding: 15px;
+}
+
+form div {
+  margin: 15px 10px;
+}
+
+input,
+select {
+  font-size: 1rem;
+  padding: 5px;
+  width: 100%;
+}
+
+/* Disables number arrows */
+input::-webkit-inner-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button {
+  font-size: 1rem;
+  padding: 5px;
+  width: 100%;
+}
+
+#message-box {
+  text-align: center;
+  width: 400px;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.fail {
+  background-color: var(--fail);
+}
+
+.valid {
+  border: 1px solid var(--success);
+}
+
+.invalid {
+  border: 1px solid var(--fail);
+}
